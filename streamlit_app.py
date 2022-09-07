@@ -13,7 +13,7 @@ streamlit.text(my_data_row)
 
 streamlit.title("Zena's Amazing Athleisure Catalog")
 #----search bar
-my_cur.execute("select color_or_style from catalog_for_website")
+my_cur.execute("select color_or_style from ZENAS_ATHLEISURE_DB.PUBLIC.catalog_for_website")
 
 
 #my_catalog = my_cur.fetchall()
