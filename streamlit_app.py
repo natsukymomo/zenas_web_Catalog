@@ -14,7 +14,7 @@ my_data_row = my_cur.fetchone()
 
 
 
-streamlit.title('Zena's Amazing Athleisure Catalog)
+streamlit.title("Zena's Amazing Athleisure Catalog")
 #----search bar
 my_cur.execute("select color_or_style from catalog_for_website")
 my_catalog = my_cur.fetchall()
