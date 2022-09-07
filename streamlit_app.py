@@ -13,7 +13,7 @@ my_cur.execute("select color_or_style from catalog_for_website")
 
 my_catalog = my_cur.fetchall()
 df = pandas.DataFrame(my_catalog)
-streamlit.write(df)
+#streamlit.write(df)
 color_list = df[0].values.tolist()
 
 option = streamlit.selectbox('Pick a sweatsuit color or style', list(color_list))
@@ -32,4 +32,4 @@ streamlit.image(
 
 streamlit.write('Price:', df2[1])
 streamlit.write('Size Available:', df2[2])
-streamlit.write(df2[3])
+streamlit.write('BONUS: ' + df2[3])
